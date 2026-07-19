@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>HTML Links</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>HTML Links</h1>
+        <p>On trouve des liens dans presque toutes les pages web. Ils permettent aux utilisateurs de cliquer pour passer d'une page à l'autre.</p>
+
+        <br>
+
+        <h2>Liens HTML - Hyperliens</h2>
+        <p>Les liens HTML sont des hyperliens.</p>
+        <p>Vous pouvez cliquer sur un lien et passer à un autre document.</p>
+        <p>Lorsque vous passez la souris sur un lien, la flèche de la souris se transforme en une petite main.</p>
+        <div style="background-color: yellow;">
+            <p>Remarque : un lien ne doit pas nécessairement être du texte, il peut s'agir d'une image ou de tout autre élément HTML !</p>
+        </div>
+        
+        <br>
+
+        <h2>Liens HTML - Syntaxe</h2>
+        <p>La balise HTML "a" définit un lien hypertexte. Sa syntaxe est la suivante :</p>
+        <p style="color:red">Exemple en commentaire.</p>
+        <!-- <a href="url">link text</a> -->
+        <p>L'attribut le plus important de la balise "a" est l'attribut "href", qui indique la destination du lien.</p>
+        <p>Le texte du lien est la partie qui sera visible par le lecteur.</p>
+        <p>En cliquant sur le texte du lien, le lecteur sera dirigé vers l'adresse URL spécifiée.</p>
+        <div style="background-color: #E7E9EB;">
+            <p>Exemple :</p>
+            <p>Cet exemple montre comment créer un lien vers W3Schools.com :</p>
+            <a href="https://www.w3schools.com/">Visitez W3Schools</a>
+        </div>
+        <p>Par défaut, les liens apparaissent comme suit dans tous les navigateurs :</p>
+        <ul>
+            <li>Un lien non visité est souligné et bleu</li>
+            <li>Un lien visité est souligné et violet</li>
+            <li>Un lien actif est souligné et rouge</li>
+        </ul>
+        <div></div>
+        <p><mark>Astuce : Les liens peuvent bien sûr être stylisés à l'aide de CSS, afin d'obtenir un autre aspect !</mark></p>
+        
+        <br>
+
+        <h2>Liens HTML - L'attribut target</h2>
+        <p>Par défaut, la page liée sera affichée dans la fenêtre actuelle du navigateur. Pour changer cela, vous devez spécifier une autre cible pour le lien.</p>
+        <p>L'attribut <b>target</b> indique où ouvrir le document lié.</p>
+        <p>L'attribut <b>target</b> peut prendre l'une des valeurs suivantes :</p>
+        <ul>
+            <li><b>_self</b> - Valeur par défaut. Ouvre le document dans la mêle fenêtre/onglet que celle dans la quelle il a été cliqué</li>
+            <li><b>_blank</b> - Ouvre le document dans une nouvelle fenêtre ou un nouvel onglet</li>
+            <li><b>_parent</b> - Ouvre le document dans le cadre parent</li>
+            <li><b>_top</b> - Ouvre le document dans le corps entier de la fenêtre</li>
+        </ul>
+        <div style="background: #E7E9EB; padding: 8px 20px;">
+            <h3>Exemple </h3>
+            <p>Utiliser <b>target="_blank"</b> pour ouvrir le document lié dans une nouvelle fenêtre ou un nouvel onglet du navigateur :</p>
+            <h4>L'attribut target</h4>
+            <a href="https://www.w3schools.com/" target="_blank">Visitez W3School</a>
+        </div>
+        
+        
+        <br>
+
+        <h2>URL absolus et URL relatifs</h2>
+        <p>Les deux exemples ci-dessus utilisent une <b>URL absolue</b> (une adresse web complète) dans l'attribut <b>href</b>.</p>
+        <p>Un lien local (un lien vers une page du même site web) est spécifié avec une <b>URL relative</b> (sans la partie "https://www").</p>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <h4>Les URLs absolues</h4>
+            <p><a href="https://www.w3.org/">W3C</a></p>
+            <p><a href="https://www.google.com/">Google</a></p>
+            <h4>Les URLs relative</h4>
+            <p style="color: red;">Étant donné que je me situe dans mes dossiers et non dans un site web, nous n'arriverons pas au lien indiqué.</p>
+            <p><a href="html_images.asp">Images HTML</a></p>
+            <p><a href="/css/default.asp">Tutoriel CSS</a></p>
+        </div>
+        
+        <br>
+
+        <h2>Liens HTML - Utiliser une image comme lien</h2>
+        <p>Pour utiliser une image comme lien, il suffit de placer la balise "img" à l'intérieur de la balise "a" :</p>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <a href="smiley.gif"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+        </div>
+        
+        
+        <br>
+
+        <h2>Lien vers une adresse électronique</h2>
+        <p>Utilisez <b>mailto</b> dans l'attribut <b>href</b> pour créer un lien qui ouvre le programme de messagerie de l'utilisateur (pour lui permettre d'envoyer un nouveau courriel) :</p>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <a href="mailto:super@exemple.com">Envoyez un email</a>
+        </div>
+        
+        <br>
+
+        <h2>Bouton en tant que lien</h2>
+        <p>Pour utiliser un bouton HTML comme lien, vous devez ajouter du code JavaScript.</p>
+        <p>JavaScript vous permet de spécifier ce qui se passe lors de certains événments, comme le clic sur un bouton :</p>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <a href="redirection_reussite.html"><button>Tutoriel HTML</button></a>
+        </div>
+        
+        <br>
+
+        <h2>L'attribut title</h2><!--IF ERROR{CHANGE}-->
+        <p>L'attribut <b>title</b> spécifie des informations supplémentaires sur un élément. Ces informations sont le plus souvent affichées sous la forme d'une infobulle lorsque la souris passe sur l'élément.</p>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <a href="https://www.w3schools.com/html/" title="Aller à la section HTML DE W3Schools">Visiter notre tutoriel HTML</a>
+        </div>
+        
+        <br>
+
+        <h2>En savoir plus sur les URL absolus et les URL relatifs</h2>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <p>Utiliser une URL complète pour créer un lien vers une page web :</p>
+            <a href="https://www.w3schools.com/html/default.asp">Tutoriel HTML</a>
+        </div>
+        <br>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <p>Lien vers une page située dans le dossier html du site web actuel :</p>
+            <p style="color: red;">Étant donné que je suis dans un dossier local de mon PC et non sur un le site web concerné, cliquer sur le lien n'aura aucun effet.</p>
+            <a href="/html/default.asp">Tutoriel HTML</a>
+        </div>
+        <br>
+        <div style="background-color: #E7E9EB; padding: 8px 20px">
+            <h3>Exemple</h3>
+            <p>Lien vers une page située dans le même dossier que la page actuelle :</p>
+            <a href="redirection_reussite.html">redirection_reussite.html</a>
+        </div>
+        <br>
+        <div style="background-color: yellow;">
+            <p>Pour en savoir plus sur les chemins d'accès aux fichiers, consultez le chapitre <b>HTML File Paths</b> sur W3Schools.</p>
+        </div>
+
+    </body>
+</html>

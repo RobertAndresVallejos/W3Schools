@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Couleurs HTML HSL et HSLA</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Couleurs HTML HSL et HSLA</h1>
+        <p>HSL signifie <b>H</b>UE (teinte), <b>S</b>ATURATION (saturation) et <b>L</b>IGHTNESS (légèreté).</p>
+        <p>Les valeurs HSLA sont une extension de HSL avec un canal <b>A</b>lpha (opacité).</p>
+
+        <br><br><br>
+
+        <h2>Valeurs de couleur HSL</h2>
+        <p>En HTML, une couleur peut être spécifiée en utilisant la teinte, la saturation et la luminosité (HSL) sous la forme :</p>
+        <p>hsl (HUE, SATURATION, LIGHTNESS)</p>
+        <p>"Hue" est un degré de couleur de 0 à 360.</p>
+        <p>"Saturation" est une valeur en pourcentage. 0% correspond à une nuance de gris et 100% à la couleur complète.</p>
+        <p>"Luminosité" est également une valeur en pourcentage. 0% correspond au noir et 100% au blanc.</p>
+        <p>Exemple :</p>
+        <h3 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h3>
+        <h3 style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</h3>
+        <h3 style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</h3>
+        <h3 style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</h3>
+        <h3 style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</h3>
+        <h3 style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</h3>
+
+        <br>
+
+        <h2>Saturation</h2>
+        <p>La "saturation" peut être décrite comme l'intensité d'une couleur.</p>
+        <p>100% est de couleur pure, sans nuance gris.</p>
+        <p>50% est à 50% de gris, mais vous pouvez toujours voir la couleur.</p>
+        <p>0% est complètement gris, vous ne pouvez plus voir la couleur.</p>
+        <p>Exemple :</p>
+        <h3 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 60%, 50%)">hsl(0, 60%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 40%, 50%)">hsl(0, 40%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 20%, 50%)">hsl(0, 20%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</h3>
+
+        <br>
+
+        <h2>Luminosité</h2>
+        <p>La "luminosité" peut être décrite comme la quantité de lumière que vous souhaitez lui donner.<br>0% = aucune lumière (noir), 50% = 50% de lumière (ni sombre ni claire) et 100% = pleine clarté (blanc).</p>
+        <p>Exemple :</p>
+        <h3 style="background-color: hsl(0, 100%, 0%)">hsl(0, 100%, 0%)</h3>
+        <h3 style="background-color: hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</h3>
+        <h3 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h3>
+        <h3 style="background-color: hsl(0, 100%, 75%)">hsl(0, 100%, 75%)</h3>
+        <h3 style="background-color: hsl(0, 100%, 90%)">hsl(0, 100%, 90%)</h3>
+        <h3 style="background-color: hsl(0, 100%, 100%)">hsl(0, 100%, 100%)</h3>
+
+        <br>
+
+        <h2>Nuances de gris</h2>
+        <p>Les nuances de gris sont souvent définies en réglant la teinte et la saturation à 0% et en ajustant la luminosité de 0 à 100% pour obtenir des nuances plus foncées ou plus claires :</p>
+        <p>Exemple :</p>
+        <h3 style="background-color: hsl(0, 0%, 20%)">hsl(0, 0%, 20%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 30%)">hsl(0, 0%, 30%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 40%)">hsl(0, 0%, 40%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 60%)">hsl(0, 0%, 60%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 70%)">hsl(0, 0%, 70%)</h3>
+        <h3 style="background-color: hsl(0, 0%, 90%)">hsl(0, 0%, 90%)</h3>
+
+        <br>
+
+        <h2>Valeurs de couleur HSLA</h2>
+        <p>Les valeurs de couleur HSLA sont une extension des valeurs de couleur HSL, avec un canal Alpha qui spécifie l'opacité d'une couleur.</p>
+        <p>Une valeur de couleur HSLA est spécifiée avec :</p>
+        <p>hsla(hue,saturation,lightness,alpha)</p>
+        <p>Le paramètre alpha est un nombre compris entre 0,0 (totalement transparent) et 1,0 (pas du tout transparent) :</p>
+        <p>Exemple :</p>
+        <h3 style="background-color: hsla(9, 100%, 64%, 0)">hsla(9, 100%, 64%, 0)</h3>
+        <h3 style="background-color: hsla(9, 100%, 64%, 0.2)">hsla(9, 100%, 64%, 0.2)</h3>
+        <h3 style="background-color: hsla(9, 100%, 64%, 0.4)">hsla(9, 100%, 64%, 0.4)</h3>
+        <h3 style="background-color: hsla(9, 100%, 64%, 0.6)">hsla(9, 100%, 64%, 0.6)</h3>
+        <h3 style="background-color: hsla(9, 100%, 64%, 0.8)">hsla(9, 100%, 64%, 0.8)</h3>
+        <h3 style="background-color: hsla(9, 100%, 64%, 1)">hsla(9, 100%, 64%, 1)</h3>
+
+    </body>
+</html>
