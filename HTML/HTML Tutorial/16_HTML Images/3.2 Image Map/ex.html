@@ -81,14 +81,29 @@
         <p></p>
         
         <h3>Shape = "circle"</h3>
+        <img src="../img/shapeCercle.jpg" alt="shapeCercle" usemap="#imageShapeCercle" width="400" height="379">
+        <map name="imageShapeCercle">
+            <area shape="circle" coords="337,300,44" href="coffee.html" alt="Cup of coffee">
+        </map>
         
         <h3>Forme = "poly"</h3>
+        <img src="../img/shapePoly.jpg" alt="shapePoly" usemap="#imageShapePoly" width="450" height="675">
+        <map name="imageShapePoly">
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.html" alt="Croissant">
+        </map>
 
         <br>
 
         <h2>Image Map et JavaScript</h2>
-
-        
+        <img src="../img/workplace.jpg" alt="workplace" usemap="#carteDImageEtJS" width="400" height="379">
+        <map name="carteDImageEtJS">
+            <area shape="circle" coords="337,300,44" href="coffee.html" alt="coffee" onclick="myFunction()">
+        </map>
+        <script>
+            function myFunction(){
+                alert("Tu as cliqué sur la tasse de café !");
+            }
+        </script>
 
     </body>
 </html>
