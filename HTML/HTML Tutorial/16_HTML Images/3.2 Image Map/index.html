@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>HTML Image Maps</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>HTML Image Maps</h1>
+
+        <h2>Image Maps</h2>
+        <img src="../img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
+        </map>
+
+        <br>
+
+        <h2>How Does it Work?</h2>
+        <p>...</p>
+
+        <br>
+
+        <h2>The Image</h2>
+        <img src="../img/workplace.jpg" alt="Workplace" usemap="#workmap"> 
+
+        <br>
+
+        <h2>Create Image Map</h2>
+        <p>Exemple en ligne de code.</p>
+        <map name="workmap"> 
+
+        <br>
+
+        <h2>The Areas</h2>
+        <p>...</p>
+        
+        
+        <h3>Shape = "rect"</h3>
+        <img src="../img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        </map>
+        
+        <h3>Shape = "circle"</h3>
+        <img src="../img/shapeCercle.jpg" alt="shapeCercle" usemap="#imageShapeCercle" width="400" height="379">
+        <map name="imageShapeCercle">
+            <area shape="circle" coords="337,300,44" href="coffee.html" alt="Cup of coffee">
+        </map>
+        
+        <h3>Shape="poly"</h3>
+        <img src="../img/shapePoly.jpg" alt="shapePoly" usemap="#imageShapePoly" width="450" height="675">
+        <map name="imageShapePoly">
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.html" alt="Croissant">
+        </map>
+
+        <br>
+
+        <h2>Image Map and JavaScript</h2>
+        <img src="../img/workplace.jpg" alt="workplace" usemap="#carteDImageEtJS" width="400" height="379">
+        <map name="carteDImageEtJS">
+            <area shape="circle" coords="337,300,44" href="coffee.html" alt="coffee" onclick="myFunction()">
+        </map>
+        <script>
+            function myFunction(){
+                alert("Tu as cliqué sur la tasse de café !");
+            }
+        </script>
+
+    </body>
+</html>
