@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Picture Element</title>
+    <link rel="stylesheet" href="../../../../style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JAVASCRIPT</a></li>
+            <li style="float:right; background:#04aa6b;"><a href="../index.html">Menu</a></li>
+<li style="float:right; background:#04aa6b;"><a href="../index.html">Retour</a></li>
+        </ul>
+    </nav>
+        
    <h1>The Picture Element</h1>
    <h2>The HTML &lt;picture&gt; Element</h2>
    <picture>
         <source media="(min-width: 650px)" srcset="img/img_food.jpg">
         <source media="(min-width: 465px)" srcset="img/img_car.jpg">
-        <img src="img/img_girl.jpg" style="width:auto;">
+        <img src="img/img_girl.jpg" width="auto" style="width:auto;">
     </picture>
    <p>Note Andres : En redimensionnant la page, nous pouvons voir que selon les paramètres définis, telle ou telle image s'affiche car elle est plus adaptée à la dimension actuelle de la page.</p>
 
@@ -19,7 +30,7 @@
    <picture>
         <source srcset="img/img_avatar.png">
         <source srcset="img/img_girl.jpg">
-        <img src="img/img_car.jpg" alt="car" style="width:auto;">
+        <img src="img/img_car.jpg" alt="car" width="auto" style="width:auto;">
     </picture>
     <p>Note Andres : Selon l'appareil utilisé (ordinateur ou téléphone) et le format requis, la balise &lt;picture&gt; permettra au navigateur d'afficher l'image la plus adaptée.</p>
 </body>
